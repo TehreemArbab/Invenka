@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.AdminHomeController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: pink;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="407.0" fitWidth="217.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../order-now.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="110.0" layoutY="14.0" text="Order Details" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="makeOrderButton" layoutX="105.0" layoutY="77.0" mnemonicParsing="false" onAction="#MakeOrder" prefHeight="45.0" prefWidth="176.0" style="-fx-background-color: pink;" text="MakeOrder" textFill="#bf0c2f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="recentbutton" layoutX="105.0" layoutY="194.0" mnemonicParsing="false" onAction="#ShowRecentOrders" prefHeight="47.0" prefWidth="176.0" style="-fx-background-color: pink;" text="Recent Orders" textFill="#bf0c2f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="trackbtn" layoutX="106.0" layoutY="313.0" mnemonicParsing="false" onAction="#orderTracking" prefHeight="43.0" prefWidth="181.0" style="-fx-background-color: pink;" text="Tracking" textFill="#bf0c2f">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

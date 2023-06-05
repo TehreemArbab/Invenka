@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.ShowDueOrderSuppliersController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="407.0" fitWidth="217.0" layoutX="-13.0" layoutY="77.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@inb.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="77.0" layoutY="32.0" prefHeight="42.0" prefWidth="239.0" text="Show Due Orders">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label fx:id="info" layoutX="74.0" prefHeight="39.0" prefWidth="249.0" textFill="#fc0606">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="52.0" layoutY="333.0" mnemonicParsing="false" onAction="#Back" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #0000FF;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="Itemtable" layoutX="36.0" layoutY="85.0" prefHeight="231.0" prefWidth="320.0">
+               <columns>
+                  <TableColumn fx:id="namecol" prefWidth="96.0" text="Item Name" />
+                  <TableColumn fx:id="datecol" minWidth="0.0" prefWidth="130.0" text="date of Order" />
+                  <TableColumn fx:id="Quantitycol" prefWidth="92.0" text="Quantity" />
+               </columns>
+            </TableView>
+            <Button fx:id="viewButton" layoutX="237.0" layoutY="333.0" mnemonicParsing="false" onAction="#ViewDueOrders" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #0000FF;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

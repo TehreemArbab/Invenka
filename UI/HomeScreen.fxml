@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.HomeScreenController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="315.0" fitWidth="217.0" layoutX="-6.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@inb.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="52.0" layoutY="130.0" text="update item">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="184.0" text="delete item">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="239.0" text="view items">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="129.0" layoutY="42.0" prefHeight="34.0" prefWidth="148.0" text="Manage Item">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="updateButton" layoutX="243.0" layoutY="123.0" mnemonicParsing="false" onAction="#Update" prefHeight="44.0" prefWidth="107.0" style="-fx-background-color: #008000;" text="Update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="deleteButton" layoutX="243.0" layoutY="177.0" mnemonicParsing="false" onAction="#Delete" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #FF0000;" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewButton" layoutX="243.0" layoutY="232.0" mnemonicParsing="false" onAction="#View" prefHeight="39.0" prefWidth="106.0" style="-fx-background-color: #008000;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="additem" layoutX="54.0" layoutY="296.0" text="Add Item">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddButton" layoutX="243.0" layoutY="290.0" mnemonicParsing="false" onAction="#Add" prefHeight="37.0" prefWidth="106.0" style="-fx-background-color: Green;" text="Add" textFill="#fceaea">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="Back" layoutX="58.0" layoutY="334.0" mnemonicParsing="false" onAction="#GoBack" prefHeight="16.0" prefWidth="104.0" style="-fx-background-color: Blue;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

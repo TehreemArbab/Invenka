@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.GenerateInventoryReportOwnerController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="407.0" fitWidth="217.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@inb.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="110.0" layoutY="28.0" prefHeight="34.0" prefWidth="190.0" text="Inventory Report">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="52.0" layoutY="333.0" mnemonicParsing="false" onAction="#Back" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #0000FF;" text="Back" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="Itemtable" layoutX="28.0" layoutY="219.0" prefHeight="90.0" prefWidth="152.0">
+               <columns>
+                  <TableColumn fx:id="idSold" prefWidth="47.33331108093262" text="ID" />
+                  <TableColumn fx:id="nameSold" prefWidth="103.33333587646484" text="Name" />
+               </columns>
+            </TableView>
+            <Button fx:id="viewButton" layoutX="237.0" layoutY="333.0" mnemonicParsing="false" onAction="#View" prefHeight="44.0" prefWidth="90.0" style="-fx-background-color: #0000FF;" text="View" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Button>
+            <TableView fx:id="Itemtable1" layoutX="17.0" layoutY="89.0" prefHeight="90.0" prefWidth="354.0">
+               <columns>
+                  <TableColumn fx:id="idcol1" prefWidth="97.33331108093262" text="ID" />
+                  <TableColumn fx:id="namecol1" prefWidth="161.99999237060547" text="Name" />
+                  <TableColumn fx:id="pricecol1" prefWidth="93.99993896484375" text="Price" />
+               </columns>
+            </TableView>
+            <TableView fx:id="Itemtable2" layoutX="212.0" layoutY="219.0" prefHeight="90.0" prefWidth="151.0">
+               <columns>
+                  <TableColumn fx:id="idConsumption" prefWidth="56.66667175292969" text="ID" />
+                  <TableColumn fx:id="ratecol" prefWidth="92.66667683919272" text="Rate" />
+               </columns>
+            </TableView>
+            <Label layoutX="38.0" layoutY="62.0" text="Available Items">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="192.0" text="Sold Items">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="212.0" layoutY="192.0" text="Consumption Rate">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
